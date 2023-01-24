@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Peminjaman Kendaraan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+  
+    <div class="container-fluid mb-0" style="background-color: rgb(239, 239, 239);">
+      <div class="row">
+        <div class="col-md-12">
+        <center>
+          <h3>
+           Bargain Rental Nf
+          </h3>
+        </center>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kendaraanbaru.html">Kendaraan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown ml-md-auto">
+               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Lainnya</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="AboutUs.html"></a> <a class="dropdown-item" href="AboutUs.html">About us</a> <a class="dropdown-item" href="booking.html">Booking</a>
+                <div class="dropdown-divider">
+                </div> <a class="dropdown-item" href="login.html">Login</a>
+              </div>
+            </li>
+          </ul>
+  
+      <!-- Right navbar links -->
+
+      <!-- Main content -->
+          
+      <div class="content">
+        <div class="card-header" style="background-color: rgba(200, 200, 200, 0.664);">
+          <div class="row">
+            <div class="col-12 col-md-6"><h4>Bargain Rental</h4></div>
+            
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  
+                  <li class="breadcrumb-item active">Booking</li>
+                </ol>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+          <section id="form">
+        <div class="container-fluid">
+          <br>
+          <legend>Form Peminjaman Kendaraan</legend>
+          <br>
+          <form>
+              <div class="form-group row">
+                <label for="text" class="col-4 col-form-label">Nama Peminjam</label> 
+                <div class="col-8">
+                  <input id="text" name="text" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-4 col-form-label" for="Pilih">Jenis Kendaraan</label> 
+                <div class="col-8">
+                  <select id="Pilih" name="Pilih" class="custom-select">
+                    <option value="mobil">Mobil</option>
+                    <option value="minubus">Mini Bus</option>
+                    <option value="buswisata">Bus Wisata</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="text area" class="col-4 col-form-label">Deskripsi Pengunaan</label> 
+                <div class="col-8">
+                  <textarea id="text area" name="text area" cols="40" rows="3" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-4">Tambahan</label> 
+                <div class="col-8">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input name="checkbox" id="checkbox_0" type="checkbox" class="custom-control-input" value="Sound System"> 
+                    <label for="checkbox_0" class="custom-control-label">Supir 1</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input name="checkbox" id="checkbox_1" type="checkbox" class="custom-control-input" value="Wifi"> 
+                    <label for="checkbox_1" class="custom-control-label">Supir 2</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input name="checkbox" id="checkbox_2" type="checkbox" class="custom-control-input" value="Layar Besar"> 
+                    <label for="checkbox_2" class="custom-control-label">Pemandu Wisata</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input name="checkbox" id="checkbox_3" type="checkbox" class="custom-control-input" value="Catering"> 
+                    <label for="checkbox_3" class="custom-control-label">Layanan VVIP</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="number" class="col-4 col-form-label">Tanggal Penyewaan</label> 
+                <div class="col-8">
+                  <div class="input-group">
+                    <input id="number" name="number" placeholder="dd/mm/yyyy" type="text" aria-describedby="numberHelpBlock" class="form-control"> 
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                    </div>
+                  </div> 
+                  <span id="numberHelpBlock" class="form-text text-muted">ex: 28/02/2022</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="number" class="col-4 col-form-label">No Whatsapp</label> 
+                <div class="col-8">
+                  <input id="number" name="number" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email</label> 
+                <div class="col-8">
+                  <input id="email" name="email" type="text" class="form-control">
+                </div>
+              </div> 
+              <div class="form-group row">
+                <div class="offset-4 col-8">
+                  <a class="btn btn-primary" href="ruangan.html" role="button">Submit</a>
+                    
+                </div>
+              </div>
+          </form>
+          </section>
+        <!-- /.container-fluid -->
+      </div>
+    <!-- /.content -->
+
+  <!-- /.content-wrapper -->
+
+  <div class="row mt-5 mb-0" style="background-color: rgb(192, 188, 188);">
+    <div class="col-md-12">
+      <center>
+        <address class="text-white">
+          <p> <b> <i> Bargainn Rental</i></b> </p>
+        </address>
+      </center>
+    </div>
+  </div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
